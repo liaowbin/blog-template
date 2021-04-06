@@ -12,4 +12,4 @@
 git clone git@github.com:liaowbin/blog-template.git
 ```
 
-有任何与此模板相关的问题都可以和我联系,[QQ](tencent://message/?uin=2293044773&Site=qq&Menu=yes),或者加入相关[QQ群](https://jq.qq.com/?_wv=1027&k=5mH9Yeq)进行讨论
+有任何与此模板相关的问题都可以和我联系QQ:2293044773,或者加入相关[QQ群](https://jq.qq.com/?_wv=1027&k=5mH9Yeq)进行讨论
