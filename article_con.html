@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文章标题-我的博客</title>
+    <meta name="keywords" content="文章标题">
+    <meta name="description" content="文章描述">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/tomorrow-night-blue.css">
+    <script src="js/highlight.min.js"></script>
+    <!--[if lte ie 8]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- 头部导航 - S -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <!-- PC -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="50" alt="logo"></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav left">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="article.html">文章</a></li> 
+                        <li><a href="case.html">案例</a></li>
+                        <li><a href="stayword.html">留言</a></li>              
+                        <li><a href="about.html">关于</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right right">
+                            <li class="search-flag"><a href="javascript:;"><i class="iconfont">&#xe61a;</i></a></li>
+                            <li class="logon-flag"><a href="javascript:;"><i class="iconfont">&#xe7a3;</i></a></li>
+                    </ul>
+                </div>
+                <i class="iconfont icon-modlie">&#xe62b;</i>
+                <!-- Moblie -->
+                <div class="modlie-nav">
+                    <ul class="nav">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="article.html">文章</a></li>
+                        <li><a href="case.html">案例</a></li>
+                        <li><a href="stayword.html">留言</a></li>                   
+                        <li><a href="about.html">关于</a></li>
+                        <li class="search-flag"><a href="javascript:;"><i class="iconfont">&#xe61a;</i></a></li>
+                        <li class="logon-flag"><a href="javascript:;"><i class="iconfont">&#xe7a3;</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- 头部导航 - E -->
+    <!-- 内容部分 - S -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="article.html">文章</a></li>
+                        <li class="active">正文</li>
+                    </ol>
+               </div>
+                <!-- 内容 - S -->
+                <div class="col-md-8">
+                    <!-- 正文 - S -->
+                    <div class="text-content">
+                        <div class="content">
+                            <div class="text-content-head">
+                                <h1>这是第一篇文章</h1>
+                                <p><i class="iconfont">&#xe621;</i><span>admin</span></p>
+                                <p><i class="iconfont">&#xe61c;</i><span>2018-6-28 12:00:00</span></p>
+                                <p><i class="iconfont">&#xe624;</i><span>534</span></p>
+                                <p><i class="iconfont">&#xe606;</i><span>26</span></p>
+                            </div>
+                            <div class="text-content-info">
+                                <h5>关于这个想法已经有了很长时间了，今天把这个flag插在这里，一点点实现这个计划。 对于WordPress，“重”对于我是太大的痛点。 自己个性定制一款轻博客。</h5>
+                                <hr>
+                            </div>
+                            <div class="text-content-main">
+                                <p>引入方式</p>
+                                <pre class="h1js"><code><ul><li>&lt;script type='application/javascript' src='/path/to/fastclick.js'&gt;&lt;/script&gt;</li></ul></code></pre>
+                                <p>html代码</p>
+                                <pre class="h1js"><code><ol><li>&lt;div class="demo"&gt;</li><li>    &lt;h1&gt;标题&lt;/h1&gt;</li><li>&lt;/div&gt;</li></ol></code></pre>
+                                <p>js代码</p>
+                                <pre class="h1js"><code><ol><li>if ('addEventListener' in document) {</li><li>    document.addEventListener('DOMContentLoaded', function() {</li><li>        FastClick.attach(document.body);</li><li>    }, false);</li><li>}</li></ol></code></pre>
+                            </div>
+                            <div class="text-content-footer">
+                                <div class="btn-tow">
+                                    <button class="btn btn-info"><i class="iconfont">&#xe636;</i>&nbsp;<span>0</span></button>
+                                    <a href="#comment" class="btn btn-info">评论</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 正文 - E -->
+                    <!-- 转载声明 - S -->
+                    <div class="reprint">
+                        <div class="content">
+                            <span>转载声明：转载分享加上文章链接注明地址即可</span>
+                            <textarea id="rep_text"></textarea>
+                            <p>本文链接：<span>http://liaoweibin.com/article.php</span><b class="copy">点击复制</b></p>
+                        </div>
+                    </div>
+                    <!-- 转载声明 - E -->
+                    <!-- 评论 - S -->
+                    <div class="stayword" id="comment">
+                        <div class="content">
+                            <h1>评论</h1>
+                            <div class="stayword-inp col-md-6">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        昵称：<b>*</b><input type="text" class="form-control" placeholder="昵称">
+                                    </div>
+                                    <div class="form-group">
+                                        邮箱：<b>*</b><input type="email" class="form-control" placeholder="邮箱">
+                                    </div>
+                                    <div class="form-group">
+                                        内容：<b>*</b><textarea class="form-control" rows="3" placeholder="留句话吧！"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <a href="" class="btn btn-info">提交</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="stayword-info col-md-6">
+                                <div class="content">
+                                    <h6>温馨提示</h6>
+                                    <p class="ip">我们已锁定您的ip：<span>123.123.123.0</span></p>
+                                    <p>一、带*为必填内容</p>
+                                    <p>二、邮箱为私人信息不会公开</p>
+                                    <p class="guidin">三、请遵守国家法律规定，文明评论</p>
+                                    <p>此文章共有<span>1</span>条评论</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 评论 - E -->
+                    <!-- 留言列表 - S -->
+                    <div class="stayword-list">
+                        <div class="content">
+                            <h1>留言列表</h1>
+                        </div>
+                        <div class="stayword-con scrollreveal">
+                            <div class="content">
+                                <div class="stayword-top">
+                                    <p><i class="iconfont">&#xe621;</i><span>admin</span></p>
+                                    <p><i class="iconfont">&#xe61c;</i><span>2018-06-10 16:53:11</span></p>
+                                    <p class="lou">1楼</p>
+                                </div>
+                                <div class="stayword-text">
+                                    <p>这是此网站第一条留言</p>
+                                    <a href="javascript:;" class="zan"><i class="iconfont">&#xe636;</i><span>0</span></a>
+                                    <a href="javascript:;" class="btn btn-stayword" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">回复</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 留言列表 - E -->
+                </div>
+                <!-- 内容 - E -->
+                <!-- 侧边栏 - S -->
+                <div class="col-md-4 article_con_matop">
+                    <!-- 热门文章 - S -->
+                        <div class="hot-article">
+                            <div class="content">
+                                <div class="title">
+                                    <i class="iconfont">&#xe618;</i>
+                                    <h4>热门文章</h4>                            
+                                </div>
+                                <div class="list">
+                                    <p><span>1.</span><a href="">输入一个网址进入看到页面发生了哪些事</a></p>
+                                    <p><span>2.</span><a href="">css实现，多行文本溢出省略号</a></p>
+                                    <p><span>3.</span><a href="">前端性能优化</a></p>
+                                    <p><span>4.</span><a href="">去除display:inline-block间隔的多种实现方法</a></p>
+                                    <p><span>5.</span><a href="">JS 事件绑定、事件监听、事件委托详细介绍</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- 热门文章 - E -->
+                    <!-- 精彩评论 - S -->
+                        <div class="wond-com">
+                            <div class="content">
+                                <div class="title">
+                                    <i class="iconfont">&#xe623;</i>
+                                    <h4>精彩评论</h4>                            
+                                </div>
+                                <div class="list">
+                                    <div class="wond-text">
+                                        <img src="images/100.jpg" class="left img-responsive img-circle" width="50" height="50" alt="">
+                                        <p><b>admin：</b><span>暂无评论，留下一条吧</span></p>
+                                    </div>
+                                    <div class="wond-text">
+                                        <img src="images/100.jpg" class="left img-responsive img-circle" width="50" height="50" alt="">
+                                        <p><b>admin：</b><span>暂无评论，留下一条吧</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- 精彩评论 - E -->
+                </div>
+                <!-- 侧边栏 - E -->
+            </div>
+        </div>
+    </main>
+    <!-- 内容部分 - E -->
+    <!-- 回复模态框 - S -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">回复：<span>admin</span></h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                <div class="form-group">
+                    <label for="message-text" class="control-label">回复内容：</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">确定</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- 回复模态框 - E -->
+    <!-- 尾部 - S-->
+    <footer>
+        <div class="container">
+            <p>Copyright © 2017 <a href="http://liaoweibin.com">我的博客</a> All Rights Reserved .</p>
+        </div>
+    </footer>
+    <!-- 尾部 - E-->
+    <!-- 搜索 - S -->
+    <div class="search">
+        <i class="iconfont close-search">&#xe61b;</i>
+        <div class="container">
+            <div class="input-group">
+                <input type="text" class="form-control" name="search" placeholder="输入您要搜索的内容">
+                <span class="input-group-addon">
+                    <i class="iconfont">&#xe61a;</i>
+                    <button></button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- 搜索 - E -->
+    <!-- 登录 and 注册 - S -->
+    <div class="logon">
+        <canvas id="c"></canvas>   
+        <i class="iconfont close-logon">&#xe61b;</i>        
+        <div class="container">
+            <img src="images/logo.png" class="img-responsiv center-block" style="max-width: 200px;margin-bottom: 15px">  
+            <div class="logon-tab">
+                <span class="tab-active">登录</span>
+                <span>注册</span>
+            </div>
+            <ul class="login">
+                <div class="input-group">
+                    <span class="input-group-addon">用户名：</span>
+                    <input type="text" class="form-control" placeholder="Username" name="user">
+                    <p class="usertip" style="color: #fff">用户名不符合要求</p>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">密码：</span>
+                    <input type="password" class="form-control" placeholder="Password" name="pwd">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">验证码：</span>
+                    <input type="text" class="form-control code" placeholder="验证码" name="code">
+                    <img src="images/code.jpg" alt="" width="90">
+                </div>
+                <div class="input-group">
+                    <input type="submit" class="login-flag button-new" value="确认">
+                    <a href="" class="forget">忘记密码</a>
+                </div>                
+            </ul>
+            <ul class="register">
+                <div class="input-group">
+                    <span class="input-group-addon">账号：</span>
+                    <input type="text" class="form-control re-user" placeholder="6~16个字符,可使用字母、数字" name="user">
+                    <p class="usertip" style="color: #fff">账号不符合要求</p>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">密码：</span>
+                    <input type="password" class="form-control re-pwd" placeholder="6~16个字符，区分大小写" name="pwd">
+                    <p class="usertip" style="color: #fff">密码不符合要求</p>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">邮箱：</span>
+                    <input type="text" class="form-control re-email" placeholder="例如：2293044773@qq.com" name="email">
+                    <p class="usertip" style="color: #fff">邮箱不符合要求</p>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">验证码：</span>
+                    <input type="text" class="form-control code" placeholder="验证码" name="code">
+                    <img src="images/code.jpg" alt="" width="90">
+                </div>
+                <div class="input-group">
+                    <input type="submit" class="login-flag button-new re_btn" value="注册">
+                    <!-- <a href="" class="forget">忘记密码</a> -->
+                </div>  
+            </ul>
+        </div>
+    </div>
+    <!-- 登录 and 注册 - E -->
+    <!-- 回到顶部 - S -->
+    <div id="go-top" data-toggle="tooltip" title="回到顶部">
+        <i class="iconfont">&#xe62e;</i>
+    </div>
+    <!-- 回到顶部 - E -->
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/blog.js"></script>
+<!-- <script color="97,158,239" src="js/canvas-nest.min.js"></script> -->
+<!-- <script src="js/canvas.js"></script> -->
+<script>
+    hljs.initHighlightingOnLoad();
+    var articleCon = document.getElementsByClassName("text-content")[0];
+    var articleConImage;;
+    if(articleConImage = articleCon.getElementsByTagName("img")) {
+        for( var i = 0; i < articleConImage.length; i ++ ) {
+            articleConImage[i].style.display = "none";
+            articleConImage[i].setAttribute("class","img-responsive");
+            articleConImage[i].style.display = "block";
+        }
+    }
+</script>
+</html>
