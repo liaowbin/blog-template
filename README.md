@@ -4,7 +4,7 @@
 
 预览地址: [博客](http://liaoweibin.com/)
 
-这个博客是在18年做的,基于`Bootstrap`框架进行开发,也用了`Juqery`、`Scrollreveal`、`highlight`,博客相对来说比较简洁
+这个博客是在18年做的,基于`Bootstrap`框架进行开发,也用了`Juqery`、`Scrollreveal`、`highlight`库和插件,博客相对来说比较简洁
 
 ## 下载
 
