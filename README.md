@@ -1,12 +1,12 @@
 # blog-template
 
-##前端简洁博客模板
+## 前端简洁博客模板
 ---
 预览地址: [博客][http://liaoweibin.com/]
 
 这个博客是在18年做的,基于`Bootstrap`框架进行开发,也用了`Juqery`、`Scrollreveal`、`highlight`,博客相对来说比较简洁
 
-##下载
+## 下载
 ---
 ```
 	git clone git@github.com:liaowbin/blog-template.git
